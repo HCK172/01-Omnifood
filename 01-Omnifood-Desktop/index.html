@@ -17,7 +17,9 @@
 
   <body>
     <header class="header">
-      <img class="logo" alt="Omnifood logo" src="./img/omnifood-logo.png" />
+      <a href="#"
+        ><img class="logo" alt="Omnifood logo" src="./img/omnifood-logo.png"
+      /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Section 1</a></li>
@@ -478,11 +480,13 @@
           </h2>
         </div>
 
-        <div class="container grid grid--2-cols">
-          <div class="pricing-plan">
-            <p class="pricing-name">Starter</p>
-            <p class="plan-price"><span>$</span>399</p>
-            <p class="plan-text">per month. That's just $13 per meal!</p>
+        <div class="container grid grid--2-cols margin-bottom-md">
+          <div class="pricing-plan pricing-plan--starter">
+            <header class="plan-header">
+              <p class="plan-name">Starter</p>
+              <p class="plan-price"><span>$</span>399</p>
+              <p class="plan-text">per month. That's just $13 per meal!</p>
+            </header>
             <ul class="list">
               <li class="list-item">
                 <ion-icon
@@ -497,7 +501,7 @@
                   class="list-icon"
                   name="checkmark-circle-outline"
                 ></ion-icon
-                ><span>Order times are between 11am and 9pm</span>
+                ><span>Order from 11am and 9pm</span>
               </li>
 
               <li class="list-item">
@@ -507,16 +511,183 @@
                 ></ion-icon
                 ><span>Delivery is free</span>
               </li>
+
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon
+                ><span></span>
+              </li>
             </ul>
-            <a href="#" class="btn btn--full"
-            >Start eating well</a
+            <div class="plan-sign-up">
+              <a href="#" class="btn btn--full">Subscribe now</a>
+            </div>
           </div>
 
+          <!-- price plan 2 -->
+          <div class="pricing-plan pricing-plan--complete">
+            <header class="plan-header">
+              <p class="plan-name">Complete</p>
+              <p class="plan-price"><span>$</span>649</p>
+              <p class="plan-text">per month. That's just $11 per meal!</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon
+                ><span><strong>2 </strong>meals per day</span>
+              </li>
 
-          <div class="pricing-plan"></div>
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon
+                ><span>Order <strong>24/7</strong> </span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon
+                ><span>Delivery is free</span>
+              </li>
+
+              <li class="list-item">
+                <ion-icon
+                  class="list-icon"
+                  name="checkmark-circle-outline"
+                ></ion-icon
+                ><span>Get access to latest recipes</span>
+              </li>
+            </ul>
+            <div class="plan-sign-up">
+              <a href="#" class="btn btn--full">Subscribe now</a>
+            </div>
+          </div>
+        </div>
+        <div class="container grid">
+          <aside class="plan-details">
+            Prices include all applicable taxes. Users can cancel at any time.
+          </aside>
+        </div>
+
+        <div class="container grid grid--4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+            <p class="feature-title">Never cook again!</p>
+            <p class="feature-text">
+              Our subscriptions cover 365 days per year, even including major
+              holidays.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+            <p class="feature-title">Local and organic</p>
+            <p class="feature-text">
+              Our cooks only use local, fresh, and organic products to prepare
+              your meals.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+            <p class="feature-title">No waste</p>
+            <p class="feature-text">
+              All our partners only use reusable containers to package all your
+              meals.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="Pause-outline"></ion-icon>
+            <p class="feature-title">Pause Anytime</p>
+            <p class="feature-text">
+              Going on vacation? Just pause your subscription, and we refund
+              unused days
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get your first meal on us!</h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="full-name">Full name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for id="select-where"
+                    >Where did you hear from us?</label
+                  >
+                  <select id="select-where" required>
+                    <option value="">Please choose your option:</option>
+                    <option value="friends and family">
+                      Friend and Family
+                    </option>
+                    <option value="youtube">Youtube</option>
+                    <option value="ad">Facebook Ad</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Sign up now</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="women enjoying food"
+            ></div>
+          </div>
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="container grid grid--5-cols">
+        <div class="logo-col">
+          <a href="#" class="footer-logo"
+            ><img
+              class="logo"
+              alt="Omnifood logo"
+              src="./img/omnifood-logo.png"
+          /></a>
+          <p class="copyright">
+            Copyright &copy; 2027 Omnifood, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">Address</div>
+        <div class="nav-col">nav 1</div>
+        <div class="nav-col">nav 2</div>
+        <div class="nav-col">nav 3</div>
+      </div>
+    </footer>
 
     <script
       type="module"
